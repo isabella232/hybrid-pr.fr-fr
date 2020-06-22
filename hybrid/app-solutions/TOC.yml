@@ -1,0 +1,74 @@
+- name: Documentation Azure Hybrid
+  href: index.yml
+- name: Vue d’ensemble
+  items:
+    - name: Modèles hybrides et exemples de solutions
+      href: overview-patterns-solution-examples.md
+- name: Modèles
+  items:
+    - name: Unique
+      items:
+        - name: Mise à l’échelle multicloud
+          href: pattern-cross-cloud-scale.md
+        - name: CI/CD hybride DevOps
+          href: pattern-cicd-pipeline.md
+        - name: Application géodistribuée
+          href: pattern-geo-distributed.md
+        - name: Relais hybride
+          href: pattern-hybrid-relay.md
+        - name: Données hiérarchisées
+          href: pattern-tiered-data-analytics.md
+        - name: Entraîner un modèle ML à la périphérie
+          href: pattern-train-ml-model-at-edge.md
+    - name: Multiple
+      items:
+        - name: Mise à l’échelle multicloud (données locales)
+          href: pattern-cross-cloud-scale-onprem-data.md
+        - name: Détection des pas (magasin)
+          href: pattern-retail-footfall-detection.md
+        - name: Détection de ruptures de stock à la périphérie
+          href: pattern-out-of-stock-at-edge.md
+- name: Guides de déploiement de solutions
+  items:
+    - name: Mise à l’échelle multicloud
+      href: solution-deployment-guide-cross-cloud-scaling.md
+    - name: Mise à l’échelle multicloud (données locales)
+      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+    - name: CI/CD hybride DevOps
+      href: 'https://aka.ms/hybriddevopsdeploy'
+    - name: Détection des pas (magasin)
+      href: solution-deployment-guide-retail-footfall-detection.md
+    - name: Application géodistribuée
+      href: solution-deployment-guide-geo-distributed.md
+    - name: Connectivité hybride
+      href: solution-deployment-guide-connectivity.md
+    - name: Identité hybride
+      href: solution-deployment-guide-identity.md
+    - name: Relais hybride
+      href: 'https://aka.ms/hybridrelaydeployment'
+    - name: Données hiérarchisées
+      href: 'https://aka.ms/tiereddatadeploy'
+    - name: Haute disponibilité MongoDB
+      href: solution-deployment-guide-mongodb-ha.md
+    - name: "Haute disponibilité SQL Server\_2016"
+      href: solution-deployment-guide-sql-ha.md
+    - name: Rupture de stock à la périphérie
+      href: 'https://aka.ms/edgeinferencingdeploy'
+    - name: Entraînement de modèles ML à la périphérie
+      href: 'https://aka.ms/edgetrainingdeploy'
+- name: Concepts
+  items:
+    - name: Considérations sur la conception d’applications hybrides
+      href: overview-app-design-considerations.md
+- name: Rubriques connexes
+  items:
+    - name: Documentation Azure
+      href: /azure
+    - name: Documentation sur Azure Stack
+      href: /azure-stack
+- name: Ressources
+  items:
+    - name: Microsoft Learn
+      href: /learn
+    - name: Microsoft Q&A
+      href: /answers/products/
