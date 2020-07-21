@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ac27dd4f6dd719fade045f33750502fa2572bd9a
-  ms.sourcegitcommit: 6914306c4a326c4532d2fc7f325953b56d9d92f8
+  ms.openlocfilehash: ee69d8f1110166063edc5a4b2cdbfaf36b402868
+  ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/01/2020
-  ms.locfileid: "85594053"
+  ms.lasthandoff: 07/20/2020
+  ms.locfileid: "86477301"
 highlightedContent:
   items:
   - title: Événement virtuel hybride Azure
@@ -76,7 +76,7 @@ conceptualContent:
     - url: /azure/machine-learning/
       itemType: overview
       text: Azure Machine Learning
-  - title: Containers
+  - title: Conteneurs
     links:
     - url: /azure/azure-arc/kubernetes/
       itemType: overview
@@ -120,7 +120,7 @@ conceptualContent:
       text: Azure DevOps pour CI/CD
     - url: /azure/event-hubs/
       itemType: overview
-      text: Hubs d'événements Azure
+      text: Azure Event Hubs
     - url: /azure/azure-functions/
       itemType: overview
       text: Azure Functions
@@ -172,7 +172,7 @@ conceptualContent:
       text: Azure Sentinel
     - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
       itemType: overview
-      text: Appareils joints Azure AD hybrides
+      text: Appareils joints Azure AD hybride
   - title: Gestion
     links:
     - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
@@ -202,7 +202,7 @@ conceptualContent:
     - url: /windows-server/manage/windows-admin-center/azure/
       itemType: overview
       text: Services hybrides Azure Windows Admin Center
-  - title: Mise en réseau
+  - title: Réseau
     links:
     - url: /azure/networking/edge-zones-overview
       itemType: overview
@@ -251,29 +251,29 @@ additionalContent:
     items:
     - title: Modèles d’application hybrides et exemples de solutions
       links:
-      - url: /hybrid/app-solutions/overview-patterns-solution-examples
+      - url: ./app-solutions/overview-patterns-solution-examples.md
         text: Que sont les modèles et les exemples de solutions ?
-      - url: /hybrid/app-solutions/overview-app-design-considerations
+      - url: ./app-solutions/overview-app-design-considerations.md
         text: Considérations sur la conception d’applications hybrides
     - title: Explorer des modèles hybrides
       links:
-      - url: /hybrid/app-solutions/pattern-cross-cloud-scale
+      - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: Mise à l’échelle multicloud
-      - url: /hybrid/app-solutions/pattern-cicd-pipeline
+      - url: ./app-solutions/pattern-cicd-pipeline.md
         text: CI/CD hybride DevOps
-      - url: /hybrid/app-solutions/pattern-retail-footfall-detection
+      - url: ./app-solutions/pattern-retail-footfall-detection.md
         text: Détection des pas (magasin)
-      - url: /hybrid/app-solutions/pattern-geo-distributed
+      - url: ./app-solutions/pattern-geo-distributed.md
         text: Application géodistribuée
     - title: Déployer des exemples de solutions hybrides
       links:
-      - url: /hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling
+      - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: Mise à l’échelle multicloud
       - url: https://aka.ms/hybriddevopsdeploy
         text: CI/CD hybride DevOps
-      - url: /hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection
+      - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
         text: Détection des pas (magasin)
-      - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
+      - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: Application géodistribuée
   - title: Ressources supplémentaires
     items:
@@ -284,7 +284,7 @@ additionalContent:
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Fonctionnalités hybrides Azure
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
-        text: Témoignages client sur le Cloud hybride
+        text: Témoignages client sur le cloud hybride
       - url: /learn
         text: Formation interactive Microsoft Learn
       - url: /learn/tv/
@@ -307,7 +307,7 @@ additionalContent:
         text: Kit de développement Vision AI
       - url: /visualstudio/azure/
         text: Développement Visual Studio Azure
-    - title: Prise en charge et autres ressources
+    - title: Support et autres ressources
       links:
       - url: https://azure.microsoft.com/blog/topics/hybrid/
         text: Blog sur l’hybride Azure
