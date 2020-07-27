@@ -10,17 +10,20 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 9793f34db13e324de65b719613c0f4dbf4bdf127
-  ms.sourcegitcommit: 8d75007af6ad574e0629208464bbadb97a5c438e
+  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
+  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/22/2020
-  ms.locfileid: "86949659"
+  ms.lasthandoff: 07/24/2020
+  ms.locfileid: "87121805"
 highlightedContent:
   items:
   - title: Découvrir le nouvel Azure Stack HCI
     itemType: video
     url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
+  - title: 'Inspire 2020 : Nouveautés d’Azure Stack HCI'
+    itemType: video
+    url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
   - title: Événement virtuel hybride Azure
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -205,7 +208,7 @@ conceptualContent:
     - url: /windows-server/manage/windows-admin-center/azure/
       itemType: overview
       text: Services hybrides Azure Windows Admin Center
-  - title: Mise en réseau
+  - title: Réseau
     links:
     - url: /azure/networking/edge-zones-overview
       itemType: overview
@@ -258,7 +261,7 @@ additionalContent:
         text: Que sont les modèles et les exemples de solutions ?
       - url: ./app-solutions/overview-app-design-considerations.md
         text: Considérations sur la conception d’applications hybrides
-    - title: Explorer des modèles hybrides
+    - title: Explorer les modèles d’applications hybrides
       links:
       - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: Mise à l’échelle multicloud
@@ -268,7 +271,7 @@ additionalContent:
         text: Détection des pas (magasin)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: Application géodistribuée
-    - title: Déployer des exemples de solutions hybrides
+    - title: Déployer des exemples de solutions d’applications hybrides
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: Mise à l’échelle multicloud
@@ -298,6 +301,8 @@ additionalContent:
         text: Développement .NET pour Azure
       - url: https://github.com/likamrat/azure_arc
         text: Guides de démarrage rapide Azure Arc
+      - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+        text: Guide d’évaluation Azure Stack HCI
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Certifié pour les appareils Azure IoT Edge
       - url: /samples/browse/
