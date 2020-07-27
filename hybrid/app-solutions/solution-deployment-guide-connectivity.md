@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 0e1a0fc4fb4110fdb406d4b4b2e72abb8f5412c9
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910314"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477284"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>Configurer une connectivité cloud hybride à l'aide d'Azure et d'Azure Stack Hub
 
@@ -37,7 +37,7 @@ Certains composants sont nécessaires pour créer un déploiement de connectivit
 ### <a name="azure"></a>Azure
 
 - Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
-- Créez une [application web](https://docs.microsoft.com/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?view=vsts&tabs=vsts) dans Azure. Notez l’URL de l’application web, car vous en aurez besoin dans la solution.
+- Créez une [application web](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts) dans Azure. Notez l’URL de l’application web, car vous en aurez besoin dans la solution.
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -69,7 +69,7 @@ Vérifiez que vous répondez aux critères suivants avant de commencer la config
 
 #### <a name="solution-example-values"></a>Valeurs des exemples de la solution
 
-Nous utilisons les valeurs suivantes dans les exemples de cette solution. Vous pouvez utiliser ces valeurs pour créer un environnement de test ou vous y référer pour mieux comprendre les exemples. Pour plus d’informations sur les paramètres de la passerelle VPN, consultez [À propos des paramètres de la passerelle VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
+Nous utilisons les valeurs suivantes dans les exemples de cette solution. Vous pouvez utiliser ces valeurs pour créer un environnement de test ou vous y référer pour mieux comprendre les exemples. Pour plus d’informations sur les paramètres de la passerelle VPN, consultez [À propos des paramètres de la passerelle VPN](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
 
 Spécifications de la connexion :
 
@@ -99,7 +99,7 @@ Adresses IP réseau et sous-réseau :
 
 ## <a name="create-a-virtual-network-in-global-azure-and-azure-stack-hub"></a>Créer un réseau virtuel dans Azure global et Azure Stack Hub
 
-Procédez comme suit pour créer un réseau virtuel à l’aide du portail Azure. Vous pouvez utiliser ces [exemples de valeurs](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) si vous utilisez cet article uniquement comme solution. Si vous utilisez cet article pour configurer un environnement de production, remplacez les exemples de paramètres par vos propres valeurs.
+Procédez comme suit pour créer un réseau virtuel à l’aide du portail Azure. Vous pouvez utiliser ces [exemples de valeurs](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) si vous utilisez cet article uniquement comme solution. Si vous utilisez cet article pour configurer un environnement de production, remplacez les exemples de paramètres par vos propres valeurs.
 
 > [!IMPORTANT]
 > Vous devez vous assurer que les adresses IP ne se chevauchent pas dans les espaces d'adressage du réseau virtuel Azure ou Azure Stack Hub.
@@ -212,4 +212,4 @@ Vous pouvez afficher la connexion dans la page **Connexions** de la passerelle d
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Pour plus d’informations sur les modèles Azure Cloud, consultez [Modèles de conception cloud](https://docs.microsoft.com/azure/architecture/patterns).
+- Pour plus d’informations sur les modèles Azure Cloud, consultez [Modèles de conception cloud](/azure/architecture/patterns).

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: b34ba7c10ff5f658d645923ae8b6de2fb2607ccb
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910594"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477267"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>Déployer une solution MongoDB hautement disponible sur Azure et Azure Stack Hub
 
@@ -40,9 +40,9 @@ Dans cette solution, vous allez créer un exemple d’environnement pour :
 - Deux systèmes intégrés Azure Stack Hub connectés (Azure Stack Hub). Ce déploiement ne fonctionne pas sur le kit de développement Azure Stack (ASDK). Pour en savoir plus sur Azure Stack Hub, consultez [Qu’est-ce qu’Azure Stack Hub ?](https://azure.microsoft.com/products/azure-stack/hub/).
   - Un abonnement de locataire sur chaque infrastructure Azure Stack Hub. 
   - **Prenez note de chaque ID d’abonnement et du point de terminaison Azure Resource Manager de chaque infrastructure Azure Stack Hub.**
-- Un principal de service Azure Active Directory (Azure AD) disposant d’autorisations pour l’abonnement du locataire sur chaque infrastructure Azure Stack Hub. Vous devrez peut-être créer deux principaux de service si les infrastructures Azure Stack Hub sont déployées auprès de différents locataires Azure AD. Pour apprendre à créer un principal de service pour Azure Stack Hub, consultez [Utiliser une identité d’application pour accéder aux ressources Azure Stack Hub](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals).
+- Un principal de service Azure Active Directory (Azure AD) disposant d’autorisations pour l’abonnement du locataire sur chaque infrastructure Azure Stack Hub. Vous devrez peut-être créer deux principaux de service si les infrastructures Azure Stack Hub sont déployées auprès de différents locataires Azure AD. Pour apprendre à créer un principal de service pour Azure Stack Hub, consultez [Utiliser une identité d’application pour accéder aux ressources Azure Stack Hub](/azure-stack/user/azure-stack-create-service-principals).
   - **Prenez note de l’ID d’application, de la clé secrète client et du nom de locataire de chaque principal de service (xxxxx.onmicrosoft.com).**
-- Ubuntu 16.04 syndiqué sur la Place de marché de chaque Azure Stack Hub. Pour en savoir plus sur la syndication de la Place de marché, consultez [Télécharger des éléments de la Place de marché vers Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item).
+- Ubuntu 16.04 syndiqué sur la Place de marché de chaque Azure Stack Hub. Pour en savoir plus sur la syndication de la Place de marché, consultez [Télécharger des éléments de la Place de marché vers Azure Stack Hub](/azure-stack/operator/azure-stack-download-azure-marketplace-item).
 - [Docker pour Windows](https://docs.docker.com/docker-for-windows/) installé sur votre ordinateur local.
 
 ## <a name="get-the-docker-image"></a>Obtenir l’image Docker

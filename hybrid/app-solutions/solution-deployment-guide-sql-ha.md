@@ -7,16 +7,16 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ff6d5b9667e63a6b8d232b6dd93db2d8b12fd46d
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910389"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477080"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Déployer un groupe de disponibilité SQL Server 2016 sur Azure et Azure Stack Hub
 
-Cet article vous guidera tout au long du processus de déploiement automatisé d'un cluster de base SQL Server 2016 Entreprise haute disponibilité (HA) avec un site de récupération d'urgence asynchrone dans deux environnements Azure Stack Hub. Pour en savoir plus sur SQL Server 2016 et la haute disponibilité, voir [Groupes de disponibilité Always On : une solution de haute disponibilité et de récupération d’urgence](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
+Cet article vous guidera tout au long du processus de déploiement automatisé d'un cluster de base SQL Server 2016 Entreprise haute disponibilité (HA) avec un site de récupération d'urgence asynchrone dans deux environnements Azure Stack Hub. Pour en savoir plus sur SQL Server 2016 et la haute disponibilité, voir [Groupes de disponibilité Always On : une solution de haute disponibilité et de récupération d’urgence](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
 Dans cette solution, vous allez générer un exemple d’environnement pour :
 
@@ -40,9 +40,9 @@ Dans cette solution, vous allez générer un exemple d’environnement pour :
 - Deux systèmes intégrés Azure Stack Hub connectés (Azure Stack Hub). Ce déploiement ne fonctionne pas sur le kit de développement Azure Stack (ASDK). Pour en savoir plus sur Azure Stack Hub, consultez [Vue d’ensemble d’Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 - Un abonnement de locataire sur chaque infrastructure Azure Stack Hub.
   - **Prenez note de chaque ID d’abonnement et du point de terminaison Azure Resource Manager de chaque infrastructure Azure Stack Hub.**
-- Un principal de service Azure Active Directory (Azure AD) disposant d’autorisations pour l’abonnement du locataire sur chaque infrastructure Azure Stack Hub. Vous devrez peut-être créer deux principaux de service si les infrastructures Azure Stack Hub sont déployées auprès de différents locataires Azure AD. Pour apprendre à créer un principal de service pour Azure Stack Hub, consultez [Créer des principaux de service pour permettre à des applications d’accéder à des ressources Azure Stack Hub](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals).
+- Un principal de service Azure Active Directory (Azure AD) disposant d’autorisations pour l’abonnement du locataire sur chaque infrastructure Azure Stack Hub. Vous devrez peut-être créer deux principaux de service si les infrastructures Azure Stack Hub sont déployées auprès de différents locataires Azure AD. Pour apprendre à créer un principal de service pour Azure Stack Hub, consultez [Créer des principaux de service pour permettre à des applications d’accéder à des ressources Azure Stack Hub](/azure-stack/user/azure-stack-create-service-principals).
   - **Prenez note de l’ID d’application, de la clé secrète client et du nom de locataire de chaque principal de service (xxxxx.onmicrosoft.com).**
-- SQL Server 2016 Entreprise syndiqué sur la Place de marché de chaque infrastructure Azure Stack Hub. Pour en savoir plus sur la syndication de la Place de marché, consultez [Télécharger des éléments de la Place de marché vers Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item).
+- SQL Server 2016 Entreprise syndiqué sur la Place de marché de chaque infrastructure Azure Stack Hub. Pour en savoir plus sur la syndication de la Place de marché, consultez [Télécharger des éléments de la Place de marché vers Azure Stack Hub](/azure-stack/operator/azure-stack-download-azure-marketplace-item).
     **Assurez-vous que votre organisation dispose des licences SQL appropriées.**
 - [Docker pour Windows](https://docs.docker.com/docker-for-windows/) installé sur votre ordinateur local.
 
@@ -105,6 +105,6 @@ Des images Docker pour chaque déploiement éliminent les problèmes de dépenda
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Utilisez SQL Server Management Studio pour basculer manuellement le cluster. Consultez [Effectuer un basculement manuel forcé d’un groupe de disponibilité Always On (SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
+- Utilisez SQL Server Management Studio pour basculer manuellement le cluster. Consultez [Effectuer un basculement manuel forcé d’un groupe de disponibilité Always On (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
 - Découvrez plus en détail les applications cloud hybrides. Consultez [Solutions cloud hybrides](https://aka.ms/azsdevtutorials).
 - Utilisez vos propres données ou modifiez le code pour cet exemple sur [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns).

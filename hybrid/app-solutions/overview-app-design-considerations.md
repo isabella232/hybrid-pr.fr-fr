@@ -7,20 +7,20 @@ ms.date: 06/07/2020
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4fd52f76baad8059e130adfc01cdd0152b40a510
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: c56575ac8ea6cb35d60bb9419269db89b0295721
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910419"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477216"
 ---
 # <a name="hybrid-app-design-considerations"></a>Considérations sur la conception d’applications hybrides
 
 Microsoft Azure est le seul cloud hybride cohérent. Il vous permet de réutiliser vos investissements en développement et de disposer d’applications couvrant le cloud Azure mondial, les clouds Azure souverains et Azure Stack, qui est une extension d’Azure dans votre centre de données. Les applications qui s’étendent sur des clouds sont également appelées *applications hybrides*.
 
-Le [*Guide de l’architecture des applications Azure*](https://docs.microsoft.com/azure/architecture/guide) décrit une approche structurée pour concevoir des applications scalables, résilientes et hautement disponibles. Les considérations décrites dans le [*Guide de l’architecture des applications Azure*](https://docs.microsoft.com/azure/architecture/guide) s’appliquent également aux applications conçues pour un seul cloud et aux applications couvrant plusieurs clouds.
+Le [*Guide de l’architecture des applications Azure*](/azure/architecture/guide) décrit une approche structurée pour concevoir des applications scalables, résilientes et hautement disponibles. Les considérations décrites dans le [*Guide de l’architecture des applications Azure*](/azure/architecture/guide) s’appliquent également aux applications conçues pour un seul cloud et aux applications couvrant plusieurs clouds.
 
-Cet article complète les [*piliers de la qualité logicielle*](https://docs.microsoft.com/azure/architecture/guide/pillars) décrits dans le [*Guide de l’architecture*](https://docs.microsoft.com/azure/architecture/guide/) [*des applications Azure*](https://docs.microsoft.com/azure/architecture/guide/), en se concentrant spécifiquement sur la conception d’applications hybrides. De plus, nous ajoutons un pilier de *placement*, car les applications hybrides ne sont pas exclusives à un seul cloud ou à un seul centre de données local.
+Cet article complète les [*piliers de la qualité logicielle*](/azure/architecture/guide/pillars) décrits dans le [*Guide de l’architecture*](/azure/architecture/guide/) [*des applications Azure*](/azure/architecture/guide/), en se concentrant spécifiquement sur la conception d’applications hybrides. De plus, nous ajoutons un pilier de *placement*, car les applications hybrides ne sont pas exclusives à un seul cloud ou à un seul centre de données local.
 
 Les scénarios hybrides varient considérablement avec les ressources qui sont disponibles pour le développement et englobent des considérations telles que la géographie, la sécurité, l’accès à Internet et bien d’autres. Ce guide ne peut certes pas énumérer vos considérations spécifiques, mais il peut fournir des recommandations clés et des bonnes pratiques à suivre. La réussite de la conception, de la configuration, du déploiement et de la maintenance d’une architecture d’application hybride implique de nombreuses considérations de conception qui vous sont probablement inconnues.
 
@@ -93,7 +93,7 @@ Le placement est une tâche importante qui consiste à positionner les composant
 
 **Vérifier les emplacements nécessaires.** Vérifiez que l’application, ou l’un de ses composants, fonctionne dans un cloud spécifique ou nécessite une certification pour ce dernier. Cela peut inclure des exigences de souveraineté de la part de votre entreprise ou dictées par des obligations légales. Déterminez également si des opérations locales sont nécessaires pour un emplacement ou des paramètres régionaux particuliers.
 
-**Déterminer les dépendances de connectivité.** Les emplacements imposés et d’autres facteurs peuvent dicter les dépendances de connectivité entre vos composants. Quand vous placez les composants, déterminez la connectivité et la sécurité optimales pour leur communication entre eux. Les choix possibles sont les suivants : [*VPN*](https://docs.microsoft.com/azure/vpn-gateway/), [*ExpressRoute*](https://docs.microsoft.com/azure/expressroute/) et [*Connexions hybrides*](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections).
+**Déterminer les dépendances de connectivité.** Les emplacements imposés et d’autres facteurs peuvent dicter les dépendances de connectivité entre vos composants. Quand vous placez les composants, déterminez la connectivité et la sécurité optimales pour leur communication entre eux. Les choix possibles sont les suivants : [*VPN*](/azure/vpn-gateway/), [*ExpressRoute*](/azure/expressroute/) et [*Connexions hybrides*](/azure/app-service/app-service-hybrid-connections).
 
 **Évaluer les fonctionnalités de la plateforme.** Pour chaque composant d’application, vérifiez si le fournisseur de ressources nécessaire au composant d’application concerné est disponible dans le cloud, et si la bande passante peut prendre en charge les exigences de débit et de latence attendues.
 
@@ -109,7 +109,7 @@ Le placement est une tâche importante qui consiste à positionner les composant
 
 La scalabilité est la capacité d’un système à gérer une charge accrue sur une application, ce qui peut varier au fil du temps, car d’autres facteurs et d’autres forces affectent la taille de l’audience ainsi que la taille et l’étendue de l’application.
 
-Pour plus d’informations sur ce pilier, consultez [*Scalabilité*](https://docs.microsoft.com/azure/architecture/guide/pillars#scalability) dans la description des cinq piliers de l’excellence architecturale.
+Pour plus d’informations sur ce pilier, consultez [*Scalabilité*](/azure/architecture/guide/pillars#scalability) dans la description des cinq piliers de l’excellence architecturale.
 
 Une approche basée sur une mise à l’échelle horizontale pour les applications hybrides permet d’ajouter plus d’instances afin de répondre à la demande, puis de les désactiver pendant les périodes plus calmes.
 
@@ -155,7 +155,7 @@ Pour plus d’informations sur ce pilier, consultez [*Disponibilité*](/azure/ar
 
 La résilience est la capacité d’un système et d’une application hybrides à effectuer une reprise d’activité et à continuer de fonctionner. L’objectif de la résilience est que l’application retrouve un état entièrement fonctionnel suite à une défaillance. Les stratégies de résilience incluent des solutions telles que la sauvegarde, la réplication et la reprise d’activité après sinistre.
 
-Pour plus d’informations sur ce pilier, consultez [*Résilience*](https://docs.microsoft.com/azure/architecture/guide/pillars#resiliency) dans la description des cinq piliers de l’excellence architecturale.
+Pour plus d’informations sur ce pilier, consultez [*Résilience*](/azure/architecture/guide/pillars#resiliency) dans la description des cinq piliers de l’excellence architecturale.
 
 ### <a name="resiliency-checklist"></a>Liste de vérification de résilience
 
@@ -201,7 +201,7 @@ Déterminez les parties de l’application à superviser.
 
 La sécurité est l’une des principales préoccupations de toute application cloud. Elle l’est encore plus pour les applications cloud hybrides.
 
-Pour plus d’informations sur ce pilier, consultez [*Sécurité*](https://docs.microsoft.com/azure/architecture/guide/pillars#security) dans la description des cinq piliers de l’excellence architecturale.
+Pour plus d’informations sur ce pilier, consultez [*Sécurité*](/azure/architecture/guide/pillars#security) dans la description des cinq piliers de l’excellence architecturale.
 
 ### <a name="security-checklist"></a>Liste de contrôle de sécurité
 

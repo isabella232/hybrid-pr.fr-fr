@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 740a8c0ec904fe8eb3f9744626bc9dd6655bdb52
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 10cb042e2c6d0c6cb567e14072cd80bc663d686c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910637"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477335"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Déployer une application qui effectue une mise à l’échelle multicloud à l’aide d’Azure et d’Azure Stack Hub
 
@@ -68,7 +68,7 @@ La solution dans le cloud garantit une gestion transparente et une interface fam
 
 ### <a name="get-a-custom-domain-and-configure-dns"></a>Obtenir un domaine personnalisé et configurer DNS
 
-Mettez à jour le fichier de zone DNS pour le domaine. Azure AD vérifie la propriété du nom de domaine personnalisé. Utilisez [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) pour les enregistrements DNS Azure/Office 365/externes dans Azure, ou ajoutez l’entrée DNS à [un autre bureau d’enregistrement DNS](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/).
+Mettez à jour le fichier de zone DNS pour le domaine. Azure AD vérifie la propriété du nom de domaine personnalisé. Utilisez [Azure DNS](/azure/dns/dns-getstarted-portal) pour les enregistrements DNS Azure/Office 365/externes dans Azure, ou ajoutez l’entrée DNS à [un autre bureau d’enregistrement DNS](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/).
 
 1. Inscrivez un domaine personnalisé auprès d’un bureau d’enregistrement public.
 2. Connectez-vous au Bureau d’enregistrement des noms de domaine pour le domaine. Il se peut qu’un administrateur approuvé doive effectuer les mises à jour DNS.
@@ -97,7 +97,7 @@ Azure Repos
 
 ### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>Créer un déploiement d’applications web autonomes pour App Services dans les deux clouds
 
-1. Modifiez le fichier **WebApplication.csproj**. Sélectionnez `Runtimeidentifier`, puis ajoutez `win10-x64`. (Consultez la documentation sur le [déploiement autonome](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf).)
+1. Modifiez le fichier **WebApplication.csproj**. Sélectionnez `Runtimeidentifier`, puis ajoutez `win10-x64`. (Consultez la documentation sur le [déploiement autonome](/dotnet/core/deploying/deploy-with-vs#simpleSelf).)
 
     ![Modifier un fichier de projet d’application web](media/solution-deployment-guide-cross-cloud-scaling/image3.png)
 
@@ -113,7 +113,7 @@ Azure Repos
 
     ![Ajouter du code à l’application web](media/solution-deployment-guide-cross-cloud-scaling/image4.png)
 
-3. Exécutez la build. Le processus de [build de déploiement autonome](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) publie des artefacts qui s’exécutent sur Azure et Azure Stack Hub.
+3. Exécutez la build. Le processus de [build de déploiement autonome](/dotnet/core/deploying/deploy-with-vs#simpleSelf) publie des artefacts qui s’exécutent sur Azure et Azure Stack Hub.
 
 ## <a name="use-an-azure-hosted-agent"></a>Utiliser un agent hébergé sur Azure
 
@@ -211,7 +211,7 @@ Azure Pipelines et Azure DevOps Services fournissent un pipeline hautement confi
 21. Enregistrez toutes les modifications.
 
 > [!Note]  
-> Certains paramètres des tâches peuvent avoir été automatiquement définis en tant que [variables d’environnement](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de la tâche. Au lieu de cela, l’élément d’environnement parent doit être sélectionné pour modifier ces paramètres.
+> Certains paramètres des tâches peuvent avoir été automatiquement définis en tant que [variables d’environnement](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de la tâche. Au lieu de cela, l’élément d’environnement parent doit être sélectionné pour modifier ces paramètres.
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>Publier sur Azure Stack Hub via Visual Studio
 
@@ -254,7 +254,7 @@ Utilisez des [modèles Azure Resource Manager](https://azure.microsoft.com/resou
 
 #### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>Créer un déploiement d’applications web autonomes pour App Services dans les deux clouds
 
-1. Modifiez le fichier **WebApplication.csproj** : Sélectionnez `Runtimeidentifier`, puis ajoutez `win10-x64`. Pour plus d’informations, consultez la documentation sur le [déploiement autonome](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf).
+1. Modifiez le fichier **WebApplication.csproj** : Sélectionnez `Runtimeidentifier`, puis ajoutez `win10-x64`. Pour plus d’informations, consultez la documentation sur le [déploiement autonome](/dotnet/core/deploying/deploy-with-vs#simpleSelf).
 
 2. Utilisez Team Explorer pour archiver le code dans Azure Repos.
 
@@ -268,7 +268,7 @@ Utilisez des [modèles Azure Resource Manager](https://azure.microsoft.com/resou
 
 3. Dans **Arguments**, ajoutez le code **-r win10-x64**. Cet ajout est obligatoire pour déclencher un déploiement autonome avec .NET Core.
 
-4. Exécutez la build. Le processus de [build de déploiement autonome](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) publie des artefacts qui peuvent s’exécuter sur Azure et Azure Stack Hub.
+4. Exécutez la build. Le processus de [build de déploiement autonome](/dotnet/core/deploying/deploy-with-vs#simpleSelf) publie des artefacts qui peuvent s’exécuter sur Azure et Azure Stack Hub.
 
 #### <a name="use-an-azure-hosted-build-agent"></a>Utiliser un agent de build hébergé Azure
 
@@ -329,7 +329,7 @@ La création d’une définition de mise en production est la dernière étape d
 23. Enregistrez toutes les modifications.
 
 > [!Note]  
-> Certains paramètres des tâches de mise en production sont automatiquement définis en tant que [variables d’environnement](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de tâche, mais peuvent l’être dans les éléments d’environnement parent.
+> Certains paramètres des tâches de mise en production sont automatiquement définis en tant que [variables d’environnement](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de tâche, mais peuvent l’être dans les éléments d’environnement parent.
 
 ## <a name="create-a-release"></a>Créer une mise en production
 
@@ -361,4 +361,4 @@ Un service à plusieurs clouds flexible et fiable offre sécurité des données,
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Pour plus d’informations sur les modèles Azure Cloud, consultez [Modèles de conception cloud](https://docs.microsoft.com/azure/architecture/patterns).
+- Pour plus d’informations sur les modèles Azure Cloud, consultez [Modèles de conception cloud](/azure/architecture/patterns).

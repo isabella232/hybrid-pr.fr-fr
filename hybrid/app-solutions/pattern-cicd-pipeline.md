@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 306cc9604a8e919724f9f76b7e5122d534d2d1ae
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: e26056a9507a7467473b009725d4f210d9d59ec8
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910422"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477233"
 ---
 # <a name="devops-pattern"></a>Modèle DevOps
 
@@ -47,7 +47,7 @@ Le modèle DevOps est destiné à assurer la cohérence entre les déploiements,
 - Les paramètres de déploiement vont-ils fonctionner dans tous les environnements cibles ?
 - Les propriétés spécifiques aux ressources sont-elles disponibles dans tous les clouds cibles ?
 
-Pour plus d’informations, consultez [Développer des modèles Azure Resource Manager de cohérence du cloud](https://docs.microsoft.com/azure/azure-resource-manager/templates-cloud-consistency).
+Pour plus d’informations, consultez [Développer des modèles Azure Resource Manager de cohérence du cloud](/azure/azure-resource-manager/templates-cloud-consistency).
 
 De plus, prenez en compte les points suivants pour décider du mode d’implémentation de ce modèle :
 

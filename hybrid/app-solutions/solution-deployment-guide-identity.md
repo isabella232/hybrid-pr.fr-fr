@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 1b3c683dd3e4a68413f83fd3cc129d6e6f594e1b
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 650eef0f144ecafab4586d93f72e1defdf4a61ce
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910517"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477250"
 ---
 # <a name="configure-hybrid-cloud-identity-for-azure-and-azure-stack-hub-apps"></a>Configurer une identité cloud hybride pour les applications Azure et Azure Stack Hub
 
@@ -69,4 +69,4 @@ Pour vous connecter à Azure Stack Hub à l’aide de code, utilisez l’API des
 ## <a name="next-steps"></a>Étapes suivantes
 
 - Pour plus d'informations sur la gestion des identités dans Azure Stack Hub, consultez [Architecture d'identité pour Azure Stack Hub](/azure-stack/operator/azure-stack-identity-architecture.md).
-- Pour plus d’informations sur les modèles Azure Cloud, consultez [Modèles de conception cloud](https://docs.microsoft.com/azure/architecture/patterns).
+- Pour plus d’informations sur les modèles Azure Cloud, consultez [Modèles de conception cloud](/azure/architecture/patterns).

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 6913cc522da447092dad0af24e148a3b2576495c
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 5f2e18e164e54f60b1bb7a14026a0c75c7d7ce69
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910326"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477165"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Déployer une solution de détection des pas basé sur l’intelligence artificielle à l'aide d'Azure et Azure Stack Hub
 
@@ -44,7 +44,7 @@ Avant de commencer à utiliser ce guide de déploiement, vous devez :
 - Créez deux principaux de service dans votre répertoire :
   - Un principal de service configuré pour une utilisation avec les ressources Azure, avec accès à l’étendue de l’abonnement Azure.
   - Un principal de service configuré pour une utilisation avec les ressources Azure Stack Hub, avec accès à l’étendue de l’abonnement Azure Stack Hub.
-  - Pour en savoir plus sur la création de principaux de service et l’autorisation d’accès, consultez [Utiliser une identité d’application pour accéder aux ressources](/azure-stack/operator/azure-stack-create-service-principals.md). Si vous préférez utiliser Azure CLI, consultez [Créer un principal du service avec Azure CLI](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
+  - Pour en savoir plus sur la création de principaux de service et l’autorisation d’accès, consultez [Utiliser une identité d’application pour accéder aux ressources](/azure-stack/operator/azure-stack-create-service-principals.md). Si vous préférez utiliser Azure CLI, consultez [Créer un principal du service avec Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
 - Déployer Azure Cognitive Services dans Azure ou Azure Stack Hub.
   - Commencez par vous [renseigner sur Cognitive Services](https://azure.microsoft.com/services/cognitive-services/).
   - Consultez ensuite [Déployer Azure Cognitive Services sur Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md) pour déployer Cognitive Services sur Azure Stack Hub. Vous devez d’abord vous inscrire pour accéder à la préversion.
