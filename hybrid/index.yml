@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
-  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
+  ms.openlocfilehash: ab8146340f284af226f336af8fddd2a30977869d
+  ms.sourcegitcommit: 2efdd6422c2af773ad7890dcbc546e816e501c0e
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/24/2020
-  ms.locfileid: "87121805"
+  ms.lasthandoff: 07/28/2020
+  ms.locfileid: "87264095"
 highlightedContent:
   items:
   - title: Découvrir le nouvel Azure Stack HCI
@@ -82,7 +82,7 @@ conceptualContent:
     - url: /azure/machine-learning/
       itemType: overview
       text: Azure Machine Learning
-  - title: Conteneurs
+  - title: Containers
     links:
     - url: /azure/azure-arc/kubernetes/
       itemType: overview
@@ -178,7 +178,7 @@ conceptualContent:
       text: Azure Sentinel
     - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
       itemType: overview
-      text: Appareils joints Azure AD hybride
+      text: Appareils joints Azure AD hybrides
   - title: Gestion
     links:
     - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
@@ -208,7 +208,7 @@ conceptualContent:
     - url: /windows-server/manage/windows-admin-center/azure/
       itemType: overview
       text: Services hybrides Azure Windows Admin Center
-  - title: Réseau
+  - title: Mise en réseau
     links:
     - url: /azure/networking/edge-zones-overview
       itemType: overview
@@ -286,9 +286,11 @@ additionalContent:
     - title: Ressources générales
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
-        text: Azure mondial ou Azure Stack
+        text: Cloud mondial Azure ou Azure Stack
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Fonctionnalités hybrides Azure
+      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+        text: Présentation des applications hybrides Azure Stack
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
         text: Témoignages client sur le cloud hybride
       - url: /learn
