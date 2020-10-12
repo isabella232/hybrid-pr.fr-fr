@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: def9abaa2a7231648f11453f66119399be015a4d
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477267"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852505"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>Déployer une solution MongoDB hautement disponible sur Azure et Azure Stack Hub
 
@@ -105,5 +105,5 @@ Des images Docker pour chaque déploiement éliminent les problèmes de dépenda
 ## <a name="next-steps"></a>Étapes suivantes
 
 - Si vous avez activé la machine virtuelle jumpbox sur l’infrastructure Azure Stack Hub de récupération d’urgence, vous pouvez vous connecter via le protocole SSH et interagir avec le cluster MongoDB en installant l’interface de ligne de commande mongo. Pour en savoir plus sur l’interaction avec MongoDB, voir [Interpréteur de commandes mongo](https://docs.mongodb.com/manual/mongo/).
-- Pour en savoir plus sur les applications cloud hybrides, consultez [Solutions cloud hybrides](https://aka.ms/azsdevtutorials).
+- Pour en savoir plus sur les applications cloud hybrides, consultez [Solutions cloud hybrides](/azure-stack/user/).
 - Modifiez le code pour cet exemple sur [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns).

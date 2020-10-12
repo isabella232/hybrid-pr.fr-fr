@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477080"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852471"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Déployer un groupe de disponibilité SQL Server 2016 sur Azure et Azure Stack Hub
 
@@ -106,5 +106,5 @@ Des images Docker pour chaque déploiement éliminent les problèmes de dépenda
 ## <a name="next-steps"></a>Étapes suivantes
 
 - Utilisez SQL Server Management Studio pour basculer manuellement le cluster. Consultez [Effectuer un basculement manuel forcé d’un groupe de disponibilité Always On (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
-- Découvrez plus en détail les applications cloud hybrides. Consultez [Solutions cloud hybrides](https://aka.ms/azsdevtutorials).
+- Découvrez plus en détail les applications cloud hybrides. Consultez [Solutions cloud hybrides](/azure-stack/user/).
 - Utilisez vos propres données ou modifiez le code pour cet exemple sur [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns).
