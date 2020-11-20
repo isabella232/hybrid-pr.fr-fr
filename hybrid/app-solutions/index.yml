@@ -1,32 +1,32 @@
 ### YamlMime:Landing
-title: Documentation sur les modèles hybrides et les solutions Azure
-summary: Découvrez comment tirer parti des modèles hybrides et des exemples de solutions dans le développement de vos applications. Azure et Azure Stack permettent de développer des applications hybrides, basées sur une suite de services de périphérie intelligente et de cloud intelligent.
+title: Documentation sur les modèles et solutions hybrides et multiclouds Azure
+summary: Découvrez comment tirer parti des modèles et exemples de solution hybrides et multiclouds dans le développement de vos applications, reposant sur une suite de services de cloud intelligent et de périphérie intelligente.
 metadata:
-  title: Documentation sur les modèles hybrides et les solutions Azure
-  description: Découvrez comment tirer parti des modèles hybrides et des exemples de solutions dans le développement de vos applications. Azure et Azure Stack permettent de développer des applications hybrides, basées sur une suite de services de périphérie intelligente et de cloud intelligent.
+  title: Documentation sur les modèles et solutions hybrides et multiclouds Azure
+  description: Découvrez comment tirer parti des modèles et exemples de solution hybrides et multiclouds dans le développement de vos applications, reposant sur une suite de services de cloud intelligent et de périphérie intelligente.
   ms.service: azure-stack
   ms.topic: landing-page
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
-  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.openlocfilehash: f51256c555011744f847e457b8bac46a1b5c4b14
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "84909661"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94872974"
 landingContent:
-- title: À propos des modèles hybrides et des solutions
+- title: À propos des modèles et solutions hybrides et multiclouds
   linkLists:
   - linkListType: overview
     links:
-    - text: Que sont les modèles hybrides et les exemples de solutions ?
+    - text: Que sont les modèles et les exemples de solutions ?
       url: overview-patterns-solution-examples.md
   - linkListType: concept
     links:
-    - text: Considérations sur la conception d’applications hybrides
+    - text: Considérations sur la conception d’applications
       url: overview-app-design-considerations.md
-- title: Explorer des modèles hybrides
+- title: Explorer les modèles hybrides et multiclouds
   linkLists:
   - linkListType: architecture
     links:
@@ -38,7 +38,7 @@ landingContent:
       url: pattern-retail-footfall-detection.md
     - text: Application géodistribuée
       url: pattern-geo-distributed.md
-- title: Déployer des exemples de solutions hybrides
+- title: Déployer des exemples de solutions hybrides et multiclouds
   linkLists:
   - linkListType: tutorial
     links:
