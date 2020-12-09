@@ -26,6 +26,8 @@
           href: pattern-cross-cloud-scale-onprem-data.md
         - name: Détection des pas (magasin)
           href: pattern-retail-footfall-detection.md
+        - name: Cluster Kubernetes à haute disponibilité
+          href: pattern-highly-available-kubernetes.md
         - name: Détection de ruptures de stock à la périphérie
           href: pattern-out-of-stock-at-edge.md
 - name: Guides de déploiement de solutions
@@ -40,6 +42,8 @@
       href: solution-deployment-guide-retail-footfall-detection.md
     - name: Application géodistribuée
       href: solution-deployment-guide-geo-distributed.md
+    - name: Cluster Kubernetes à haute disponibilité
+      href: solution-deployment-guide-highly-available-kubernetes.md
     - name: Connectivité hybride
       href: solution-deployment-guide-connectivity.md
     - name: Identité hybride
