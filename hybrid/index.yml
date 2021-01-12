@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 11/16/2020
-  ms.openlocfilehash: 2ca6a085610915882ad4d875b97b6f9ab53b1ed2
-  ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
+  ms.openlocfilehash: e56d862007c6fdf6d1754bdba78b11b713ebe56a
+  ms.sourcegitcommit: e4ecad490940e5951739b074c36188886e8f426c
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/09/2020
-  ms.locfileid: "96901522"
+  ms.lasthandoff: 01/11/2021
+  ms.locfileid: "98104223"
 highlightedContent:
   items:
   - title: Présentation d’Azure Modular Datacenter
@@ -134,7 +134,7 @@ conceptualContent:
       text: Azure DevOps pour CI/CD
     - url: /azure/event-hubs/
       itemType: overview
-      text: Hubs d'événements Azure
+      text: Azure Event Hubs
     - url: /azure/azure-functions/
       itemType: overview
       text: Azure Functions
@@ -386,7 +386,7 @@ additionalContent:
       links:
       - url: /azure/developer/
         text: Documentation et outils pour les développeurs Azure
-      - url: /azure/architecture/hybrid/azure-arc-hybrid-config
+      - url: /azure/architecture/browse/?azure_categories=hybrid
         text: Architectures hybrides Azure
       - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
         text: Azure IoT Tools pour Visual Studio Code
