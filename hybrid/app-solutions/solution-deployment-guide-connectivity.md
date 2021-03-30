@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 4480f51b03082f2a0cbb7f2f213e05b7bf488646
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477284"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895374"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>Configurer une connectivité cloud hybride à l'aide d'Azure et d'Azure Stack Hub
 
@@ -25,7 +25,7 @@ Dans cette solution, vous allez générer un exemple d’environnement pour :
 > - Gérer un système hérité tout en utilisant un déploiement d’application avec une mise à l’échelle dans le cloud et des ressources dans Azure global.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagramme des piliers hybrides](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub est une extension d’Azure. Azure Stack Hub offre à votre environnement local l’agilité et l’innovation du cloud computing grâce au seul cloud hybride qui vous permette de créer et de déployer des applications hybrides en tout lieu.  
 > 
 > L’article [Considérations sur la conception d’applications hybrides](overview-app-design-considerations.md) se penche sur les fondements de la qualité logicielle (sélection élective, scalabilité, disponibilité, résilience, facilité de gestion et sécurité) pour la conception, le déploiement et le fonctionnement des applications hybrides. Les considérations de conception vous aident à optimiser la conception d’application hybride, en réduisant les risques dans les environnements de production.
@@ -37,7 +37,7 @@ Certains composants sont nécessaires pour créer un déploiement de connectivit
 ### <a name="azure"></a>Azure
 
 - Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
-- Créez une [application web](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts) dans Azure. Notez l’URL de l’application web, car vous en aurez besoin dans la solution.
+- Créez une [application web](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs) dans Azure. Notez l’URL de l’application web, car vous en aurez besoin dans la solution.
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -47,9 +47,9 @@ Un partenaire OEM ou matériel Azure peut déployer une instance Azure Stack H
    >[!Note]
    >Le déploiement de l’ASDK peut prendre jusqu’à 7 heures, planifiez donc en conséquence.
 
-- Déployez les services PaaS [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) sur Azure Stack Hub.
-- [Créez des plans et des offres](/azure-stack/operator/service-plan-offer-subscription-overview.md) dans l'environnement Azure Stack Hub.
-- [Créez un abonnement de locataire](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md) dans l'environnement Azure Stack Hub.
+- Déployez les services PaaS [App Service](/azure-stack/operator/azure-stack-app-service-deploy) sur Azure Stack Hub.
+- [Créez des plans et des offres](/azure-stack/operator/service-plan-offer-subscription-overview) dans l'environnement Azure Stack Hub.
+- [Créez un abonnement de locataire](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) dans l'environnement Azure Stack Hub.
 
 ### <a name="azure-stack-hub-components"></a>Composants Azure Stack Hub
 
@@ -58,7 +58,7 @@ Un opérateur Azure Stack Hub doit déployer App Service, créer des plans et de
 Cet exemple de solution suppose que vous disposez de connaissances de base sur Azure et Azure Stack Hub. Pour en savoir plus avant de commencer la solution, lisez les articles suivants :
 
 - [Présentation de Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/)
-- [Concepts clés d'Azure Stack Hub](/azure-stack/operator/azure-stack-overview.md)
+- [Concepts clés d'Azure Stack Hub](/azure-stack/operator/azure-stack-overview)
 
 ### <a name="before-you-begin"></a>Avant de commencer
 

@@ -7,12 +7,12 @@ ms.date: 10/31/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 10/31/2019
-ms.openlocfilehash: 0bf07bb38537f530a0adb3569c43d53af13b8d56
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 866557ec3af2337e9f034da84cf417675508563b
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910467"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895327"
 ---
 # <a name="footfall-detection-pattern"></a>Modèle de détection des pas
 
@@ -50,7 +50,7 @@ Cette solution utilise les composants suivants :
 | Azure | [Azure Event Hubs](/azure/event-hubs/) | Azure Event Hubs fournit une plate-forme évolutive pour l'acquisition de données anonymisées qui s'intègre parfaitement à Azure Stream Analytics. |
 |  | [Azure Stream Analytics](/azure/stream-analytics/) | Une tâche Azure Stream Analytics agrège les données anonymisées et les regroupe dans des fenêtres de 15 secondes pour les visualiser. |
 |  | [Microsoft Power BI](https://powerbi.microsoft.com/) | Power BI fournit une interface de tableau de bord conviviale pour visualiser les résultats issus d’Azure Stream Analytics. |
-| Azure Stack Hub | [App Service](/azure-stack/operator/azure-stack-app-service-overview.md) | Le fournisseur de ressources App Service fournit une base pour les composants périphériques, notamment les fonctionnalités d’hébergement et de gestion pour les applications web/API et les fonctions. |
+| Azure Stack Hub | [App Service](/azure-stack/operator/azure-stack-app-service-overview) | Le fournisseur de ressources App Service fournit une base pour les composants périphériques, notamment les fonctionnalités d’hébergement et de gestion pour les applications web/API et les fonctions. |
 | | Cluster du moteur Azure Kubernetes Service [(AKS)](https://github.com/Azure/aks-engine) | Le fournisseur de ressources AKS avec le cluster du moteur AKS déployé dans Azure Stack Hub fournit un moteur résilient et scalable pour exécuter le conteneur de l’API Visage. |
 | | Azure Cognitive Services [Conteneurs de l’API Visage](/azure/cognitive-services/face/face-how-to-install-containers)| Le fournisseur de ressources Azure Cognitive Services avec les conteneurs de l’API Visage offre une détection démographique, émotionnelle et unique des visiteurs sur le réseau privé de Contoso. |
 | | Stockage Blob | Les images capturées à partir du kit de développement d’intelligence artificielle sont chargées sur le stockage Blob Azure Stack Hub. |

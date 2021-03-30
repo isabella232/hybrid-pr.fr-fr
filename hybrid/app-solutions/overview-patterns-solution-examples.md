@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ab0eb885e7b0fefaca8991522712652f979d8712
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 4f86e5ae4b8b9bd7693617b07419b67dfcf05dc1
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910335"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895310"
 ---
 # <a name="hybrid-patterns-and-solution-examples-for-azure-and-azure-stack"></a>Modèles hybrides et exemples de solutions pour Azure et Azure Stack
 
@@ -49,4 +49,4 @@ Des guides de déploiement pas à pas vous aident à déployer un exemple de sol
 - Consultez [Famille de produits et de solutions Azure Stack](/azure-stack) pour en savoir plus sur l’ensemble du portefeuille de produits et de solutions.
 - Pour plus d’informations sur chacun d’eux, explorez les sections « Modèles » et « Guides de déploiement de solutions » de la table des matières.
 - Découvrez les [considérations relatives à la conception d’applications hybrides](overview-app-design-considerations.md) pour passer en revue les piliers de la qualité logicielle permettant de concevoir, de déployer et d’utiliser des applications hybrides.
-- [Configurez un environnement de développement sur Azure Stack](/azure-stack/user/azure-stack-dev-start.md) et [déployez votre première application](/azure-stack/user/azure-stack-dev-start-deploy-app.md) sur Azure Stack.
+- [Configurez un environnement de développement sur Azure Stack](/azure-stack/user/azure-stack-dev-start) et [déployez votre première application](/azure-stack/user/azure-stack-dev-start-deploy-app) sur Azure Stack.

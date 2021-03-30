@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2177b32474dea695967e197acbd4bc1e18422d7b
-ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
+ms.openlocfilehash: caedbd4758b9ae8c93cf9bb625ed9aac68bfa196
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96901488"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895360"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Déployer une solution de détection des pas basé sur l’intelligence artificielle à l'aide d'Azure et Azure Stack Hub
 
@@ -29,7 +29,7 @@ Dans cette solution, vous allez apprendre à :
 > ![Diagramme des piliers hybrides](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub est une extension d’Azure. Azure Stack Hub offre à votre environnement local l’agilité et l’innovation du cloud computing grâce au seul cloud hybride qui vous permette de créer et de déployer des applications hybrides en tout lieu.  
 > 
-> L’article [Considérations sur la conception d’applications hybrides](overview-app-design-considerations.md) se penche sur les fondements de la qualité logicielle (sélection élective, scalabilité, disponibilité, résilience, facilité de gestion et sécurité) en matière de conception, de déploiement et d’exploitation des applications hybrides. Les considérations de conception vous aident à optimiser la conception d’application hybride, en réduisant les risques dans les environnements de production.
+> L’article [Considérations sur la conception d’applications hybrides](overview-app-design-considerations.md) se penche sur les fondements de la qualité logicielle (sélection élective, scalabilité, disponibilité, résilience, facilité de gestion et sécurité) pour la conception, le déploiement et le fonctionnement des applications hybrides. Les considérations de conception vous aident à optimiser la conception d’application hybride, en réduisant les risques dans les environnements de production.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -37,22 +37,22 @@ Avant de commencer à utiliser ce guide de déploiement, vous devez :
 
 - Consulter la rubrique [Modèle de détection des pas](pattern-retail-footfall-detection.md).
 - Obtenir un accès utilisateur à un kit de développement Azure Stack (ASDK) ou à une instance de système intégré Azure Stack Hub avec :
-  - [Azure App Service sur le fournisseur de ressources Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-overview.md) installé. Vous devez disposer d'un accès opérateur à votre instance Azure Stack Hub ou vous rapprocher de votre administrateur pour qu'il l'installe.
+  - [Azure App Service sur le fournisseur de ressources Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-overview) installé. Vous devez disposer d'un accès opérateur à votre instance Azure Stack Hub ou vous rapprocher de votre administrateur pour qu'il l'installe.
   - Abonnement à une offre fournissant App Service et un quota de stockage. Vous devez disposer d'un accès opérateur pour créer une offre.
 - Obtenir un accès à un abonnement Azure.
   - Si vous n’avez pas d’abonnement Azure, créez un [compte d'évaluation gratuit](https://azure.microsoft.com/free/) avant de commencer.
 - Créez deux principaux de service dans votre répertoire :
   - Un principal de service configuré pour une utilisation avec les ressources Azure, avec accès à l’étendue de l’abonnement Azure.
   - Un principal de service configuré pour une utilisation avec les ressources Azure Stack Hub, avec accès à l’étendue de l’abonnement Azure Stack Hub.
-  - Pour en savoir plus sur la création de principaux de service et l’autorisation d’accès, consultez [Utiliser une identité d’application pour accéder aux ressources](/azure-stack/operator/azure-stack-create-service-principals.md). Si vous préférez utiliser Azure CLI, consultez [Créer un principal du service avec Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true).
+  - Pour en savoir plus sur la création de principaux de service et l’autorisation d’accès, consultez [Utiliser une identité d’application pour accéder aux ressources](/azure-stack/operator/azure-stack-create-service-principals). Si vous préférez utiliser Azure CLI, consultez [Créer un principal du service avec Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true).
 - Déployer Azure Cognitive Services dans Azure ou Azure Stack Hub.
   - Commencez par vous [renseigner sur Cognitive Services](https://azure.microsoft.com/services/cognitive-services/).
-  - Consultez ensuite [Déployer Azure Cognitive Services sur Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md) pour déployer Cognitive Services sur Azure Stack Hub. Vous devez d’abord vous inscrire pour accéder à la préversion.
+  - Consultez ensuite [Déployer Azure Cognitive Services sur Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services) pour déployer Cognitive Services sur Azure Stack Hub. Vous devez d’abord vous inscrire pour accéder à la préversion.
 - Clonez ou téléchargez un kit de développement IA Azure Custom Vision non configuré. Pour plus d’informations, consultez [Kit de développement IA Custom Vision](https://azure.github.io/Vision-AI-DevKit-Pages/).
 - Créez un compte Power BI.
 - Clé d’abonnement et URL de point de terminaison API Visage Azure Cognitive Services. Vous pouvez obtenir les deux avec la version d’évaluation gratuite [Essayez Cognitive Services](https://azure.microsoft.com/try/cognitive-services/?api=face-api), ou suivre les instructions contenues dans [Créer un compte Cognitive Services](/azure/cognitive-services/cognitive-services-apis-create-account).
 - Installez les ressources de développement suivantes :
-  - [Azure CLI 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2.md)
+  - [Azure CLI 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2)
   - [Docker CE](https://hub.docker.com/search/?type=edition&offering=community)
   - [Porter](https://porter.sh/). Vous utilisez Porter pour déployer des applications cloud à l’aide des manifestes de bundle CNAB qui vous sont fournis.
   - [Visual Studio Code](https://code.visualstudio.com/)
