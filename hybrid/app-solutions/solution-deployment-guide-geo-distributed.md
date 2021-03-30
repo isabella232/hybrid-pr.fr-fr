@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
+ms.openlocfilehash: 9fa2c351d2c13d85fe1adb17a35e165de96ea2a2
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886830"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895429"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>Diriger le trafic avec une application géodistribuée en utilisant Azure et Azure Stack Hub
 
@@ -61,7 +61,7 @@ Avant de créer une empreinte d’application distribuée, il est utile de dispo
 - **Convention d’affectation de noms pour les applications :** comme plusieurs instances de l’application vont être déployées, un nom est requis pour chacune d’entre elles. Avec App Service Environment pour PowerApps, le même nom d’application peut être utilisé dans plusieurs environnements. Étant donné que chaque environnement App Service comporte un suffixe de domaine unique, les développeurs peuvent choisir de réutiliser le même nom d’application dans chaque environnement. Par exemple, un développeur peut avoir des applications nommées comme suit : *myapp.foo1.p.azurewebsites.net*, *myapp.foo2.p.azurewebsites.net*, *myapp.foo3.p.azurewebsites.net*, et ainsi de suite. Pour l’application utilisée ici, chaque instance de l’application a un nom unique. Les noms d’instance application utilisés sont *webfrontend1*, *webfrontend2* et *webfrontend3*.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagramme des piliers hybrides](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub est une extension d’Azure. Azure Stack Hub offre à votre environnement local l’agilité et l’innovation du cloud computing grâce au seul cloud hybride qui vous permette de créer et de déployer des applications hybrides en tout lieu.  
 > 
 > L’article [Considérations sur la conception d’applications hybrides](overview-app-design-considerations.md) se penche sur les fondements de la qualité logicielle (sélection élective, scalabilité, disponibilité, résilience, facilité de gestion et sécurité) pour la conception, le déploiement et le fonctionnement des applications hybrides. Les considérations de conception vous aident à optimiser la conception d’application hybride, en réduisant les risques dans les environnements de production.
@@ -97,7 +97,7 @@ Mettez à jour le fichier de zone DNS pour le domaine. Azure AD peut ensuite vé
 Configurez une intégration/livraison continue (CI/CD) hybride pour déployer Web App sur Azure et Azure Stack Hub, et pour envoyer les modifications aux deux clouds.
 
 > [!Note]  
-> Vous avez besoin d’Azure Stack Hub avec les images appropriées syndiquées pour s’exécuter (Windows Server et SQL), et App Service doit être déployé. Pour plus d’informations, consultez [Conditions préalables au déploiement d’App Service sur Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Vous avez besoin d’Azure Stack Hub avec les images appropriées syndiquées pour s’exécuter (Windows Server et SQL), et App Service doit être déployé. Pour plus d’informations, consultez [Conditions préalables au déploiement d’App Service sur Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 #### <a name="add-code-to-azure-repos"></a>Ajouter du code à Azure Repos
 
@@ -173,7 +173,7 @@ Azure DevOps Services fournit un pipeline hautement configurable et gérable pou
   
       ![Sélectionner un package ou un dossier pour l’environnement Azure App Service dans Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image12.png)
 
-      ![Sélectionner un package ou un dossier pour l’environnement Azure App Service dans Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image13.png)
+      ![Boîte de dialogue du sélecteur de dossiers 1](media/solution-deployment-guide-geo-distributed/image13.png)
 
 9. Enregistrez toutes les modifications et revenez au **pipeline de mises en production**.
 
@@ -212,7 +212,7 @@ Azure DevOps Services fournit un pipeline hautement configurable et gérable pou
 
     ![Sélectionner un dossier pour un déploiement Azure App Service dans Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image22.png)
 
-    ![Sélectionner un dossier pour un déploiement Azure App Service dans Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image23.png)
+    ![Boîte de dialogue du sélecteur de dossiers 2](media/solution-deployment-guide-geo-distributed/image23.png)
 
 18. Sous l’onglet Variable, ajoutez une variable nommée `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS`, définissez sa valeur sur **true** et sa portée sur Azure Stack Hub.
 
@@ -229,7 +229,7 @@ Azure DevOps Services fournit un pipeline hautement configurable et gérable pou
 21. Enregistrez toutes les modifications.
 
 > [!Note]  
-> Certains paramètres des tâches peuvent avoir été automatiquement définis en tant que [variables d’environnement](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de la tâche. Au lieu de cela, l’élément d’environnement parent doit être sélectionné pour modifier ces paramètres.
+> Certains paramètres des tâches peuvent avoir été automatiquement définis en tant que [variables d’environnement](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de la tâche. Au lieu de cela, l’élément d’environnement parent doit être sélectionné pour modifier ces paramètres.
 
 ## <a name="part-2-update-web-app-options"></a>Deuxième partie : Mettre à jour les options de l’application web
 
@@ -492,7 +492,7 @@ Lorsque App Service finit de charger le certificat, celui-ci apparaît dans la p
 
 2. Dans la page **Ajouter une liaison SSL**, utilisez les listes déroulantes pour sélectionner le nom de domaine à sécuriser et le certificat à utiliser.
 
-3. Dans **Type SSL**, choisissez d’utiliser [**l’indication du nom du serveur (SNI)** ](https://en.wikipedia.org/wiki/Server_Name_Indication) ou le protocole SSL basé sur IP.
+3. Dans **Type SSL**, choisissez d’utiliser [**l’indication du nom du serveur (SNI)**](https://en.wikipedia.org/wiki/Server_Name_Indication) ou le protocole SSL basé sur IP.
 
     - **SSL basé sur SNI** : plusieurs liaisons SSL basées sur SNI peuvent être ajoutées. Cette option permet de sécuriser plusieurs domaines sur la même adresse IP avec plusieurs certificats SSL. La plupart des navigateurs actuels (y compris Internet Explorer, Chrome, Firefox et Opera) prennent en charge SNI (plus d’informations sur la prise en charge des navigateurs dans [Indication du nom du serveur](https://wikipedia.org/wiki/Server_Name_Indication)).
 

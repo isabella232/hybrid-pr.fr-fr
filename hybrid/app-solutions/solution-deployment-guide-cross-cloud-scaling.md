@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5ae6c4323324fa104cd0e5c7b5198492be14b8eb
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
+ms.openlocfilehash: ed2ad5bed8f4bd80d4a40ab7600842d5544ff97d
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886813"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895412"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Déployer une application qui effectue une mise à l’échelle multicloud à l’aide d’Azure et d’Azure Stack Hub
 
@@ -30,7 +30,7 @@ Dans cette solution, vous allez générer un exemple d’environnement pour :
 > - Apprenez à surveiller et à suivre vos déploiements.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagramme des piliers hybrides](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub est une extension d’Azure. Azure Stack Hub apporte l’agilité et l’innovation du cloud computing à votre environnement local et active le seul cloud hybride qui vous permet de créer et de déployer des applications hybrides en tout lieu.  
 > 
 > L’article [Considérations sur la conception d’applications hybrides](overview-app-design-considerations.md) se penche sur les fondements de la qualité logicielle (sélection élective, scalabilité, disponibilité, résilience, facilité de gestion et sécurité) pour la conception, le déploiement et le fonctionnement des applications hybrides. Les considérations de conception vous aident à optimiser la conception d’application hybride, en réduisant les risques dans les environnements de production.
@@ -39,16 +39,16 @@ Dans cette solution, vous allez générer un exemple d’environnement pour :
 
 - Abonnement Azure. Si nécessaire, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
 - Système intégré Azure Stack Hub ou déploiement du kit de développement Azure Stack (ASDK).
-  - Pour obtenir des instructions concernant l’installation d’Azure Stack Hub, consultez [Installer le kit ASDK](/azure-stack/asdk/asdk-install.md).
+  - Pour obtenir des instructions concernant l’installation d’Azure Stack Hub, consultez [Installer le kit ASDK](/azure-stack/asdk/asdk-install).
   - Pour un script d’automatisation post-déploiement ASDK, accédez à : [https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
   - Cette installation peut prendre quelques heures.
-- Déployez les services PaaS [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) sur Azure Stack Hub.
-- [Créez des plans/offres](/azure-stack/operator/service-plan-offer-subscription-overview.md) dans l’environnement Azure Stack Hub.
-- [Créez un abonnement de locataire](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md) dans l'environnement Azure Stack Hub.
+- Déployez les services PaaS [App Service](/azure-stack/operator/azure-stack-app-service-deploy) sur Azure Stack Hub.
+- [Créez des plans/offres](/azure-stack/operator/service-plan-offer-subscription-overview) dans l’environnement Azure Stack Hub.
+- [Créez un abonnement de locataire](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) dans l'environnement Azure Stack Hub.
 - Créez une application web dans l’abonnement du locataire. Notez l’URL de la nouvelle application web. Vous en aurez besoin plus tard.
 - Déployez la machine virtuelle Azure Pipelines au sein de l’abonnement du locataire.
 - Une machine virtuelle Windows Server 2016 avec .NET 3.5 est nécessaire. Cette machine virtuelle est créée dans l’abonnement du locataire sur Azure Stack Hub en tant qu’agent de build privé.
-- [Windows Server 2016 avec l’image de machine virtuelle SQL 2017](/azure-stack/operator/azure-stack-add-vm-image.md) est disponible dans la Place de marché Azure Stack Hub. Si cette image n’est pas disponible, utilisez un opérateur Azure Stack Hub pour vous assurer qu’elle est ajoutée à l’environnement.
+- [Windows Server 2016 avec l’image de machine virtuelle SQL 2017](/azure-stack/operator/azure-stack-add-vm-image) est disponible dans la Place de marché Azure Stack Hub. Si cette image n’est pas disponible, utilisez un opérateur Azure Stack Hub pour vous assurer qu’elle est ajoutée à l’environnement.
 
 ## <a name="issues-and-considerations"></a>Problèmes et considérations
 
@@ -79,7 +79,7 @@ Mettez à jour le fichier de zone DNS pour le domaine. Azure AD vérifie la prop
 Configurez l’intégration continue/le déploiement continu (CI/CD) hybride pour déployer des applications web sur Azure et Azure Stack Hub, et envoyer automatiquement les modifications aux deux clouds.
 
 > [!Note]  
-> Vous avez besoin d’Azure Stack Hub avec les images appropriées syndiquées pour s’exécuter (Windows Server et SQL), et App Service doit être déployé. Pour plus d’informations, consultez la documentation App Service [Prérequis pour le déploiement d’App Service sur Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Vous avez besoin d’Azure Stack Hub avec les images appropriées syndiquées pour s’exécuter (Windows Server et SQL), et App Service doit être déployé. Pour plus d’informations, consultez la documentation App Service [Prérequis pour le déploiement d’App Service sur Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 ### <a name="add-code-to-azure-repos"></a>Ajouter du code à Azure Repos
 
@@ -157,7 +157,7 @@ Azure Pipelines et Azure DevOps Services fournissent un pipeline hautement confi
   
       ![Sélectionner un package ou un dossier pour l’environnement Azure App Service](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![Sélectionner un package ou un dossier pour l’environnement Azure App Service](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
+      ![Boîte de dialogue du sélecteur de dossiers 1](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
 9. Enregistrez toutes les modifications et revenez au **pipeline de mises en production**.
 
@@ -194,7 +194,7 @@ Azure Pipelines et Azure DevOps Services fournissent un pipeline hautement confi
 
     ![Sélectionner un dossier pour un déploiement Azure App Service](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![Sélectionner un dossier pour un déploiement Azure App Service](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
+    ![Boîte de dialogue du sélecteur de dossiers 2](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
 18. Sous l’onglet Variable, ajoutez une variable nommée `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS`, définissez sa valeur sur **true** et sa portée sur Azure Stack.
 
@@ -211,7 +211,7 @@ Azure Pipelines et Azure DevOps Services fournissent un pipeline hautement confi
 21. Enregistrez toutes les modifications.
 
 > [!Note]  
-> Certains paramètres des tâches peuvent avoir été automatiquement définis en tant que [variables d’environnement](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de la tâche. Au lieu de cela, l’élément d’environnement parent doit être sélectionné pour modifier ces paramètres.
+> Certains paramètres des tâches peuvent avoir été automatiquement définis en tant que [variables d’environnement](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de la tâche. Au lieu de cela, l’élément d’environnement parent doit être sélectionné pour modifier ces paramètres.
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>Publier sur Azure Stack Hub via Visual Studio
 
@@ -242,7 +242,7 @@ Maintenant que les informations du point de terminaison ont été ajoutées, la 
 ## <a name="develop-the-app-build"></a>Développer la build de l’application
 
 > [!Note]  
-> Vous avez besoin d’Azure Stack Hub avec les images appropriées syndiquées pour s’exécuter (Windows Server et SQL), et App Service doit être déployé. Pour plus d’informations, consultez [Conditions préalables au déploiement d’App Service sur Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Vous avez besoin d’Azure Stack Hub avec les images appropriées syndiquées pour s’exécuter (Windows Server et SQL), et App Service doit être déployé. Pour plus d’informations, consultez [Conditions préalables au déploiement d’App Service sur Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 Utilisez des [modèles Azure Resource Manager](https://azure.microsoft.com/resources/templates/) comme du code d’application web d’Azure Repos pour le déploiement dans les deux clouds.
 
@@ -329,7 +329,7 @@ La création d’une définition de mise en production est la dernière étape d
 23. Enregistrez toutes les modifications.
 
 > [!Note]  
-> Certains paramètres des tâches de mise en production sont automatiquement définis en tant que [variables d’environnement](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de tâche, mais peuvent l’être dans les éléments d’environnement parent.
+> Certains paramètres des tâches de mise en production sont automatiquement définis en tant que [variables d’environnement](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) lors de la création d’une définition de mise en production à partir d’un modèle. Ces paramètres ne peuvent pas être modifiés dans les paramètres de tâche, mais peuvent l’être dans les éléments d’environnement parent.
 
 ## <a name="create-a-release"></a>Créer une mise en production
 
