@@ -3,16 +3,16 @@ title: Détection des ruptures de stock avec Azure et Azure Stack Edge
 description: Découvrez comment utiliser les services Azure et Azure Stack Edge pour implémenter la détection des ruptures de stock.
 author: BryanLa
 ms.topic: article
-ms.date: 11/05/2019
+ms.date: 05/24/2021
 ms.author: bryanla
 ms.reviewer: anajod
-ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 865f63bc4234e50ed169aa29cefdb1886750594c
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.lastreviewed: 05/24/2021
+ms.openlocfilehash: b25a6391c4e64fa7018031bac4fb7d098c56b529
+ms.sourcegitcommit: cf2c4033d1b169f5b63980ce1865281366905e2e
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910452"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110343873"
 ---
 # <a name="out-of-stock-detection-at-the-edge-pattern"></a>Détection des ruptures de stock en périphérie
 
@@ -81,4 +81,4 @@ Pour en savoir plus sur les sujets abordés dans cet article :
 - Consultez [Considérations relatives à la conception des applications hybrides](overview-app-design-considerations.md) pour en savoir plus sur les bonnes pratiques et obtenir des réponses à d’autres questions.
 - Consultez [Famille de produits et de solutions Azure Stack](/azure-stack) pour en savoir plus sur l’ensemble du portefeuille de produits et de solutions.
 
-Lorsque vous êtes prêt à tester l’exemple de solution, poursuivez avec le [Guide de déploiement de la solution Données hiérarchisées à des fins analytiques](https://aka.ms/edgeinferencingdeploy). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants.
+Lorsque vous êtes prêt à tester l’exemple de solution, poursuivez avec le [Guide de déploiement de la solution d’inférence Edge ML](https://aka.ms/edgeinferencingdeploy). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants.
