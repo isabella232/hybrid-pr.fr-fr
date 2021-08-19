@@ -33,29 +33,29 @@
 - name: Guides de déploiement de solutions
   items:
     - name: Mise à l’échelle multicloud
-      href: solution-deployment-guide-cross-cloud-scaling.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
     - name: Mise à l’échelle multicloud (données locales)
-      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
     - name: CI/CD hybride DevOps
       href: 'https://aka.ms/hybriddevopsdeploy'
     - name: Détection des pas (magasin)
-      href: solution-deployment-guide-retail-footfall-detection.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
     - name: Application géodistribuée
-      href: solution-deployment-guide-geo-distributed.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
     - name: Cluster Kubernetes à haute disponibilité
-      href: solution-deployment-guide-highly-available-kubernetes.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
     - name: Connectivité hybride
-      href: solution-deployment-guide-connectivity.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-connectivity
     - name: Identité hybride
-      href: solution-deployment-guide-identity.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-identity
     - name: Relais hybride
       href: 'https://aka.ms/hybridrelaydeployment'
     - name: Données hiérarchisées
       href: 'https://aka.ms/tiereddatadeploy'
     - name: Haute disponibilité MongoDB
-      href: solution-deployment-guide-mongodb-ha.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-mongodb-ha
     - name: "Haute disponibilité SQL Server\_2016"
-      href: solution-deployment-guide-sql-ha.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-sql-ha
     - name: Rupture de stock à la périphérie
       href: 'https://aka.ms/edgeinferencingdeploy'
     - name: Entraînement de modèles ML à la périphérie

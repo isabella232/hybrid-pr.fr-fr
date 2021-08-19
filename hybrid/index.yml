@@ -86,7 +86,7 @@ conceptualContent:
         - url: /azure/machine-learning/
           itemType: overview
           text: Azure Machine Learning
-    - title: Conteneurs
+    - title: Containers
       links:
         - url: /azure/azure-arc/kubernetes/
           itemType: overview
@@ -133,7 +133,7 @@ conceptualContent:
           text: Azure DevOps pour CI/CD
         - url: /azure/event-hubs/
           itemType: overview
-          text: Hubs d'événements Azure
+          text: Azure Event Hubs
         - url: /azure/azure-functions/
           itemType: overview
           text: Azure Functions
@@ -224,7 +224,7 @@ conceptualContent:
         - url: /windows-server/manage/windows-admin-center/azure/
           itemType: overview
           text: Services hybrides Azure Windows Admin Center
-    - title: Mise en réseau
+    - title: Réseau
       links:
         - url: /azure/networking/edge-zones-overview
           itemType: overview
@@ -295,15 +295,15 @@ additionalContent:
               text: Cluster Kubernetes hautement disponible
         - title: Déployer des exemples de solutions d’applications
           links:
-            - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
               text: Mise à l’échelle multicloud
             - url: 'https://aka.ms/hybriddevopsdeploy'
               text: CI/CD hybride DevOps
-            - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
               text: Détection des pas (magasin)
-            - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
               text: Application géodistribuée
-            - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
               text: Cluster Kubernetes hautement disponible
     - title: Ressources d’évaluation et de formation
       items:
