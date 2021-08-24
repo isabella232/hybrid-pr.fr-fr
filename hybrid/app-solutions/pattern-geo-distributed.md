@@ -6,12 +6,12 @@ ms.topic: article
 ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod2019
-ms.openlocfilehash: 1f6243927390c7a520c2607c722664b2d31fc07f
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 3c839d9bf3b6c3e1ff50cc695fd5f1a1127793d2
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910320"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281225"
 ---
 # <a name="geo-distributed-app-pattern"></a>Procédure de création d’une application géodistribuée
 
@@ -82,4 +82,4 @@ Pour en savoir plus sur les sujets abordés dans cet article :
 - Consultez [Considérations relatives à la conception des applications hybrides](overview-app-design-considerations.md) pour en savoir plus sur les bonnes pratiques et obtenir des réponses à d’autres questions.
 - Consultez [Famille de produits et de solutions Azure Stack](/azure-stack) pour en savoir plus sur l’ensemble du portefeuille de produits et de solutions.
 
-Lorsque vous êtes prêt à tester l’exemple de solution, poursuivez avec le [Guide de déploiement d’une solution d’application géodistribuée](solution-deployment-guide-geo-distributed.md). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants. Découvrez comment diriger le trafic vers des points de terminaison spécifiques en fonction de différentes métriques à l’aide du modèle d’application géodistribuée. En créant un profil Traffic Manager avec configuration du routage et du point de terminaison basée sur la géolocalisation, vous êtes certain que les informations sont dirigées vers les points de terminaison en fonction des exigences régionales, des réglementations organisationnelles et internationales et de vos besoins en matière de données.
+Lorsque vous êtes prêt à tester l’exemple de solution, poursuivez avec le [Guide de déploiement d’une solution d’application géodistribuée](/azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants. Découvrez comment diriger le trafic vers des points de terminaison spécifiques en fonction de différentes métriques à l’aide du modèle d’application géodistribuée. En créant un profil Traffic Manager avec configuration du routage et du point de terminaison basée sur la géolocalisation, vous êtes certain que les informations sont dirigées vers les points de terminaison en fonction des exigences régionales, des réglementations organisationnelles et internationales et de vos besoins en matière de données.

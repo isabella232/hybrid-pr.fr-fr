@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: a830f96e97c347cbbcc09a1b17f4836ecb6eb3e6
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 90e0c177b5eaee4d223b4613e0b2ddf385fa799c
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910428"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281259"
 ---
 # <a name="cross-cloud-scaling-pattern"></a>Modèle de mise à l’échelle multicloud
 
@@ -55,7 +55,7 @@ Le DNS (Domain Name System) se charge de traduire (ou résoudre) un nom de site 
 
 Environnement d’hébergement de votre pipeline de build.
 
-#### <a name="app-resources"></a>Ressources d’application
+#### <a name="app-resources"></a>Ressources de l’application
 
 Les ressources d’application doivent pouvoir effectuer un scale-in et un scale-out, à l’image des groupes de machines virtuelles identiques et des conteneurs.
 
@@ -73,7 +73,7 @@ Les adresses IP publiques sont utilisées pour router le trafic entrant via Tra
 
 Environnement d’hébergement de votre pipeline de build.
 
-#### <a name="app-resources"></a>Ressources d’application
+#### <a name="app-resources"></a>Ressources de l’application
 
 Les ressources d’application doivent pouvoir effectuer un scale-in et un scale-out, à l’image des groupes de machines virtuelles identiques et des conteneurs.
 
@@ -123,4 +123,4 @@ Pour en savoir plus sur les sujets abordés dans cet article :
 - Consultez [Considérations relatives à la conception des applications hybrides](overview-app-design-considerations.md) pour en savoir plus sur les bonnes pratiques et obtenir des réponses à d’autres questions.
 - Consultez [Famille de produits et de solutions Azure Stack](/azure-stack) pour en savoir plus sur l’ensemble du portefeuille de produits et de solutions.
 
-Lorsque vous êtes prêt à tester l’exemple de solution, poursuivez avec le [Guide de déploiement de la solution de mise à l’échelle multicloud](solution-deployment-guide-cross-cloud-scaling.md). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants. Découvrez comment créer une solution multicloud pour fournir un processus déclenché manuellement permettant de passer d’une application web hébergée sur Azure Stack Hub à une application web hébergée sur Azure. Découvrez également comment utiliser la mise à l’échelle automatique via Traffic Manager, en garantissant un utilitaire cloud flexible et scalable en cas de charge.
+Lorsque vous êtes prêt à tester l’exemple de solution, poursuivez avec le [Guide de déploiement de la solution de mise à l’échelle multicloud](/azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants. Découvrez comment créer une solution multicloud pour fournir un processus déclenché manuellement permettant de passer d’une application web hébergée sur Azure Stack Hub à une application web hébergée sur Azure. Découvrez également comment utiliser la mise à l’échelle automatique via Traffic Manager, en garantissant un utilitaire cloud flexible et scalable en cas de charge.

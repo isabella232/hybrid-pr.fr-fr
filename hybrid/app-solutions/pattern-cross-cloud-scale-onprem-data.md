@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: edbb608fbf8e5288f29572bfe4cca98ffb3cb8fc
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 5c8e3adb621ae4322bf6d60792fc307dbb24ff90
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910425"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281242"
 ---
 # <a name="cross-cloud-scaling-on-premises-data-pattern"></a>Modèle de mise à l’échelle multicloud (données locales)
 
@@ -137,4 +137,4 @@ Pour en savoir plus sur les sujets abordés dans cet article :
 - Consultez [Considérations relatives à la conception des applications hybrides](overview-app-design-considerations.md) pour en savoir plus sur les bonnes pratiques et obtenir des réponses à d’autres questions que vous pourriez avoir.
 - Ce modèle utilise la famille de produits Azure Stack, notamment Azure Stack Hub. Consultez [Famille de produits et de solutions Azure Stack](/azure-stack) pour en savoir plus sur l’ensemble du portefeuille de produits et de solutions.
 
-Quand vous êtes prêt à tester l’exemple de solution, poursuivez avec le [guide de déploiement de la solution de mise à l’échelle multicloud (données locales)](solution-deployment-guide-cross-cloud-scaling-onprem-data.md). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants.
+Quand vous êtes prêt à tester l’exemple de solution, poursuivez avec le [guide de déploiement de la solution de mise à l’échelle multicloud (données locales)](/azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants.

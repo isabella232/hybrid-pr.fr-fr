@@ -7,12 +7,12 @@ ms.date: 10/31/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 10/31/2019
-ms.openlocfilehash: 866557ec3af2337e9f034da84cf417675508563b
-ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.openlocfilehash: 79fb39d418bed53ef6a78980fcd9188bdf6e57ae
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895327"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281276"
 ---
 # <a name="footfall-detection-pattern"></a>Modèle de détection des pas
 
@@ -88,4 +88,4 @@ Pour en savoir plus sur les sujets abordés dans cet article :
 - Consultez le [modèle Données hiérarchisées](https://aka.ms/tiereddatadeploy), qui est exploité par le modèle de détection des pas.
 - Pour en savoir plus sur l’utilisation de Custom Vision, consultez le [Kit de développement d’intelligence artificielle Custom Vision](https://azure.github.io/Vision-AI-DevKit-Pages/). 
 
-Lorsque vous êtes prêt à tester l’exemple de solution, poursuivez avec le [Guide de déploiement de la solution de détection des pas](solution-deployment-guide-retail-footfall-detection.md). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants.
+Lorsque vous êtes prêt à tester l’exemple de solution, poursuivez avec le [Guide de déploiement de la solution de détection des pas](/azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection). Ce guide de déploiement fournit des instructions pas à pas sur le déploiement et sur le test de ses composants.
